@@ -1,0 +1,152 @@
+/* Main container */
+
+.todo-container {
+  width: 90%;
+  margin: 30px auto;
+
+  border: 1px solid #555;
+
+  background-color: #f4f6f9;
+}
+
+:host {
+  display: block;
+  min-height: 100vh;
+  background: #e2e8f0;
+  padding: 20px;
+}
+
+/* Heading */
+
+.title {
+  text-align: center;
+
+  padding: 15px;
+
+  font-size: 20px;
+
+  color: #777;
+
+  border-bottom: 1px solid #777;
+}
+
+
+/* Header */
+
+.task-header {
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  padding: 25px 30px;
+
+  border-bottom: 1px solid #ddd;
+
+  font-size: 20px;
+
+  color: #777;
+}
+
+
+/* Buttons */
+
+.buttons {
+
+  display: flex;
+
+  gap: 12px;
+}
+
+
+button {
+
+  border: none;
+
+  padding: 12px 20px;
+
+  color: white;
+
+  font-size: 16px;
+
+  border-radius: 5px;
+
+  cursor: pointer;
+}
+
+
+/* Add */
+
+.add-btn {
+
+  background-color: #0d8df5;
+}
+
+
+/* Edit */
+
+.edit-btn {
+
+  background-color: #5269a5;
+}
+
+
+/* Delete */
+
+.delete-btn {
+
+  background-color: #d71919;
+}
+
+
+/* Hover */
+
+button:hover {
+
+  opacity: 0.85;
+
+}
+
+
+/* Task list */
+
+.task-list {
+
+  padding: 35px;
+}
+
+
+/* Individual task */
+
+.task {
+
+  margin-bottom: 22px;
+
+  font-size: 18px;
+
+  color: #77
+}
+/*Individual tasks */
+
+.task input {
+
+  width: 20px;
+
+  height: 20px;
+
+  margin-right: 12px;
+
+  vertical-align: middle;
+
+}
+
+
+
+.completed {
+
+  text-decoration: line-through;
+
+  color: gray;
+}

@@ -1,0 +1,53 @@
+<div class="todo-container">
+
+  <!-- Heading -->
+  <div class="title">
+    TO DO LIST
+  </div>
+
+  <!-- Header -->
+  <div class="task-header">
+
+    <span>Task List</span>
+
+    <div class="buttons">
+
+      <button class="add-btn" (click)="addTask()">
+        Add Task
+      </button>
+      
+      <button class="edit-btn" (click)="editTask()">
+        Edit Task
+      </button>
+
+      <button class="delete-btn" (click)="deleteTask()">
+        Delete Task
+      </button>
+
+    </div>
+
+  </div>
+
+
+  <!-- Task List -->
+  <div class="task-list">
+
+    <div
+      class="task"
+      *ngFor="let task of tasks; let i = index"
+    >
+
+      <input
+        type="checkbox"
+        [(ngModel)]="task.completed"
+      >
+
+      <span [class.completed]="task.completed">
+        {{ task.name }}
+      </span>
+
+    </div>
+
+  </div>
+
+</div>
